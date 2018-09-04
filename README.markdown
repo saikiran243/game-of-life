@@ -26,5 +26,3 @@ Ideal for developers, software architects, and project managers, Jenkins: The De
  - Manage a farm of Jenkins servers to run distributed builds
  - Implement automated deployment and continuous delivery
 
-#
-Configured in Maven
