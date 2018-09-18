@@ -3,7 +3,7 @@ node('linux'){
         git 'https://github.com/saikiran243/game-of-life.git'
     } 
     stage('Build & Package') {
-        sh 'mvn clean package
+        sh 'mvn clean package'
     }
     stage('Build Docker Image') {
 	    sh 'docker build -t saikiran243/gol:1 gameoflife-web/Dockerfile'
