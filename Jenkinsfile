@@ -6,7 +6,7 @@ node('linux'){
         sh 'mvn clean package'
     }
     stage('Build Docker Image') {
-	    sh 'docker build -t saikiran243/gol:1 gameoflife-web/Dockerfile'
+	    sh 'docker build -t saikiran243/gol:1 gameoflife-web/'
 	}
     stage('Run Docker image') {
 	    sh 'docker run -d -p 8080:8080 --name app saikiran243/gol:1'
